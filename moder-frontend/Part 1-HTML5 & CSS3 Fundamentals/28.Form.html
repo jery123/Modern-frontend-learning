@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        label {
-            display: block;
-            margin-bottom: 8px;
-        }
+      label {
+        display: block;
+        margin-bottom: 8px;
+      }
     </style>
   </head>
   <body>
     <form action="success.html" method="GET">
-        <!-- Name -->
+      <!-- Name -->
       <label for="e_name"
         >Name:
         <input
@@ -24,7 +24,7 @@
           placeholder="Name"
         />
       </label>
-      
+
       <!-- E-mail -->
       <label for="e_email"
         >Email:
@@ -60,7 +60,7 @@
           placeholder="*****"
         />
       </label>
-      
+
       <!-- URL -->
       <label for="e_url"
         >Web site:
@@ -72,18 +72,13 @@
           placeholder="https://example.com"
         />
       </label>
-      
+
       <!-- Quantity -->
       <label for="e_quantity"
         >Quantity:
-        <input
-          name="e_quantity"
-          id="e_quantity"
-          type="number"
-          required
-        />
+        <input name="e_quantity" id="e_quantity" type="number" required />
       </label>
-      
+
       <!-- Date -->
       <label for="e_date"
         >Date:
@@ -95,7 +90,7 @@
           value="2025-11-03"
         />
       </label>
-      
+
       <!-- Read only -->
       <label for="e_date"
         >Date:
@@ -108,7 +103,7 @@
           readonly
         />
       </label>
-      
+
       <!-- Date disabled -->
       <label for="e_date"
         >Date:
@@ -121,62 +116,154 @@
           disabled
         />
       </label>
-      
+
       <!-- Time -->
       <label for="e_time"
         >Time:
-        <input
-          name="e_time"
-          id="e_time"
-          type="time"
-          required
-        />
+        <input name="e_time" id="e_time" type="time" required />
       </label>
-      
+
       <!-- Month -->
       <label for="e_month"
         >Month:
-        <input
-          name="e_month"
-          id="e_month"
-          type="month"
-          required
-        />
+        <input name="e_month" id="e_month" type="month" required />
       </label>
 
       <!-- Week -->
       <label for="e_week"
         >Week:
-        <input
-          name="e_week"
-          id="e_week"
-          type="week"
-          required
-        />
+        <input name="e_week" id="e_week" type="week" required />
       </label>
 
       <!-- Week -->
       <label for="e_week"
         >Week:
-        <input
-          name="e_week"
-          id="e_week"
-          type="week"
-          required
-        />
+        <input name="e_week" id="e_week" type="week" required />
       </label>
 
       <!-- Date time local -->
       <label for="e_datetime"
         >Date time local:
-        <input
-          name="e_dtl"
-          id="e_dtl"
-          type="datetime-local"
-          required
-        />
+        <input name="e_dtl" id="e_dtl" type="datetime-local" required />
       </label>
 
+      <div>
+        <p>Select Gender:</p>
+        <label for="e_male"> 
+          <input name="e_gender" id="e_male" type="radio" value="Male"/> Male
+        </label>
+        <label for="e_female"> 
+          <input name="e_gender" id="e_female" type="radio" value="Female"/> Female
+        </label>
+        <label for="e_other"> 
+          <input name="e_gender" id="e_other" type="radio" value="Other"/> Other
+        </label>
+        <label for="e_pnts"> 
+          <input name="e_gender" id="e_pnts" type="radio" value="Prefer not to say"/> Prefer not to say
+        </label>
+      </div>
+
+      <div>
+        <p>Food time section:</p>
+        <label for="e_breakfast">
+          <input type="checkbox" name="e_food" id="e_breakfast" value="Breakfast">
+          Breakfast
+        </label>
+        <label for="e_lunch">
+          <input type="checkbox" name="e_food" id="e_lunch" value="Lunch">
+          Lunch
+        </label>
+        <label for="e_dinner">
+          <input type="checkbox" name="e_food" id="e_dinner" value="Dinner">
+          Dinner
+        </label>
+      </div>
+
+      <!-- Search Bar -->
+        <label for="e_search">
+          Search: 
+          <input type="search" name="e_search" id="e_search" placeholder="Search for...">
+          <input type="button" value="Search">
+        </label>
+
+      <!-- Upload -->
+        <label for="e_upload">
+          Upload: 
+          <input type="file" name="e_upload" id="e_upload" accept="image/*" multiple>
+          <input type="button" value="Upload">
+        </label>
+
+      <!-- Color -->
+        <label for="e_color">
+          Color: 
+          <input type="color" name="e_color" id="e_color">
+        </label>
+
+      <!-- Select list -->
+        <label for="e_country">
+          Select country: 
+          <select name="e_country" id="e_country">
+            <option value="IN">India</option>
+            <option value="US">United States</option>
+            <option value="CA">Canada</option>
+            <option value="UK">United Kingdom</option>
+          </select>
+        </label>
+
+      <!-- Grouped Select list -->
+        <label for="e_food_selection">
+          Select Food: 
+          <select name="e_food_selection" id="e_food_selection">
+            <optgroup label="Breakfast">
+              <option value="breakfast1">Breakfast 1</option>
+              <option value="breakfast2">Breakfast 2</option>
+              <option value="breakfast3">Breakfast 3</option>
+            </optgroup>
+            <optgroup label="Lunch">
+              <option value="lunch1">Lunch 1</option>
+              <option value="lunch2">Lunch 2</option>
+              <option value="lunch3">Lunch 3</option>
+            </optgroup>
+            <optgroup label="Dinner">
+              <option value="dinner1">Dinner 1</option>
+              <option value="dinner2">Dinner 2</option>
+              <option value="dinner3">Dinner 3</option>
+            </optgroup>
+          </select>
+        </label>
+
+        <!-- Data List Icecreams -->
+         <label for="e_icecream">
+          Select Icecream:
+          <input list="icecream-flavours" name="e_icecream" id="e_icecream">
+
+          <datalist id="icecream-flavours">
+            <option value="Vanilla">
+            <option value="Chocolate">
+            <option value="Strawberry">
+            <option value="Mango">
+            <option value="Butterscotch">
+            <option value="Pistachio">
+          </datalist>
+         </label>
+
+         <!-- Textarea -->
+         <label for="e_message">
+          Message:
+          <textarea name="e_message" id="e_message" rows="4" cols="50"></textarea>
+         </label>
+
+         <!-- Range -->
+         <label for="e_range">
+          Select a value:
+          <input type="range" name="e_range" id="e_range" min="0" max="3">
+          <input type="range" name="e_range" id="e_range" min="1" max="100">
+         </label>
+
+         <!-- Fancy Button -->
+         <label for="e_fancy">
+            <input type="image" src="assets/images/send.png">
+         </label>
 
       <button type="submit">Sign up</button>
     </form>
