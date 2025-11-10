@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <meta name="description" content="A simple semantic page" />
     <style>
       label {
         display: block;
@@ -13,6 +14,8 @@
   </head>
   <body>
     <form action="success.html" method="GET">
+      <fieldset>
+      <legend>Lenghty Registration Form</legend>
       <!-- Name -->
       <label for="e_name"
         >Name:
@@ -265,7 +268,14 @@
             <input type="image" src="assets/images/send.png">
          </label>
 
+         <!-- Hidden -->
+         <input type="hidden" name="e_hidden" value="hiddenValue">
+
+         <!-- Reset  -->
+          <button type="reset">Reset</button>
+
       <button type="submit">Sign up</button>
+      </fieldset>
     </form>
   </body>
 </html>
