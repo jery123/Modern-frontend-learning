@@ -1,0 +1,9 @@
+a {
+    color: green;
+}
+.container a {
+    color: cadetblue;
+}
+.container p a {
+    color: chocolate;
+}

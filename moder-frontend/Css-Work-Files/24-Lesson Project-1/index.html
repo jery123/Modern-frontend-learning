@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+MX+Guides&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Main Hero -->
+         <header class="main-header">
+            <!-- Logo Holder -->
+             <div class="logo-holder">
+                <a href="#">
+                    <img src="img/logo.png" alt="Pop Studio">
+                </a>
+             </div>
+            <!-- Logo Holder -->
+             <!-- Search Holder -->
+              <div class="search-holder">
+                <form action="" method="get">
+                    <input type="search" name="s" placeholder="Search for...">
+                    <button type="submit">Search</button>
+                </form>
+              </div>
+             <!-- Search Holder -->
+         </header>
+        <!-- Main Hero -->
+         <!-- Main Menu -->
+          <nav class="main-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a>
+                    <ul class="drop">
+                        <li><a href="#">Service One</a></li>
+                        <li><a href="#">Service Two</a></li>
+                        <li><a href="#">Service Three</a>
+                            <ul class="drop2">
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+         <!-- Main Menu -->
+          <!-- Banner Slider -->
+           <section class="banner-slider">
+                <ul id="adaptive">
+                    <li><img src="https://placehold.co/1000x350" alt=""></li>
+                    <li><img src="https://placehold.co/1000x350" alt=""></li>
+                    <li><img src="https://placehold.co/1000x350" alt=""></li>
+                </ul>
+           </section>
+          <!-- Banner Slider -->
+           <!-- Content Holder -->
+            <section class="content-holder">
+                <main class="content">
+                    <h1>Main Heading for site</h1>
+                    <h2>Sub Heading for site</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim distinctio hic similique, animi omnis voluptas ipsa facilis recusandae, quod dolor saepe reiciendis qui deserunt. Tempora nulla laudantium similique architecto sapiente!</p>
+                    <p>Maxime, ratione amet deleniti nemo fuga aperiam dicta, ipsam natus nihil harum voluptatum error at. Architecto, eaque. Minus dolore delectus laboriosam! Ab accusantium facere itaque animi, culpa modi perspiciatis labore.</p>
+                    <p>Qui libero adipisci non sunt accusamus voluptatum, architecto aut? Praesentium eos, excepturi eius totam dolore doloremque, magni dignissimos perspiciatis commodi, officiis in veniam inventore quae eligendi cum? Tempore, labore expedita!</p>
+                </main>
+                <aside class="sidebar">
+                    <div class="widget">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twiter</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </section>
+           <!-- Content Holder -->
+            <!-- Footer widget -->
+             <section class="footer-widget-holder">
+                <div class="footer-widget">
+                    <a href="#">
+                        <img src="img/logo.png" alt="Pop Studio">
+                    </a>
+                    <h3>Address</h3>
+                    <address>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias sequi iusto facere nesciunt excepturi vitae maxime reprehenderit necessitatibus accusamus. Perferendis similique.
+                    </address>
+                </div>
+                <div class="footer-widget">
+                    <h4>Sitemap</h4>
+                    <ul>
+                        <li><a href="#" id="">Home</a></li>
+                        <li><a href="#" id="">Services</a></li>
+                        <li><a href="#" id="">Products</a></li>
+                        <li><a href="#" id="">About</a></li>
+                        <li><a href="#" id="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h4>Sitemap</h4>
+                    <ul>
+                        <li><a href="#" id="">Home</a></li>
+                        <li><a href="#" id="">Services</a></li>
+                        <li><a href="#" id="">Products</a></li>
+                        <li><a href="#" id="">About</a></li>
+                        <li><a href="#" id="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h4>Sitemap</h4>
+                    <ul>
+                        <li><a href="#" id="">Home</a></li>
+                        <li><a href="#" id="">Services</a></li>
+                        <li><a href="#" id="">Products</a></li>
+                        <li><a href="#" id="">About</a></li>
+                        <li><a href="#" id="">Contact</a></li>
+                    </ul>
+                </div>
+             </section>
+            <!-- Footer widget -->
+             <!-- Site foooter -->
+              <footer class="site-footer">
+                <p><small>Copyright &copy; 2025</small></p>
+              </footer>
+             <!-- Site foooter -->
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script> 
+    <script>
+    $(document).ready(function() {
+        $('#adaptive').lightSlider({
+            adaptiveHeight:true,
+            item:1,
+            slideMargin:0,
+            loop:true
+        });
+    });
+    </script>
+</body>
+</html>
